@@ -1,39 +1,15 @@
 package es.maquina1995.calculadoraJunit;
 
-import org.springframework.lang.NonNull;
+public interface Calculadora {
 
-public class Calculadora {
+	public Double sumar(Double num1, Double num2);
 
-	public Double sumar(@NonNull Double num1, @NonNull Double num2) {
+	public Double restar(Double num1, Double num2);
 
-		comprobarNulos(num1, num2);
-		return num1 + num2;
+	public Double multiplicar(Double num1, Double num2);
 
-	}
+	public Double dividir(Double dividendo, Double cociente);
 
-	public Double restar(@NonNull Double num1,@NonNull Double num2) {
+	public boolean comprobarNulos(Double num1, Double num2);
 
-		comprobarNulos(num1, num2);
-		return num1 - num2;
-
-	}
-
-	public Double multiplicar(@NonNull Double num1,@NonNull Double num2) {
-
-		comprobarNulos(num1, num2);
-		return num1 * num2;
-
-	}
-
-	public Double dividir(@NonNull Double dividendo,@NonNull Double cociente) {
-
-		comprobarNulos(dividendo, cociente);
-		return dividendo / cociente;
-	}
-
-	private void comprobarNulos(@NonNull Double num1,@NonNull Double num2) {
-		if (num1 == null || num2 == null) {
-			throw new IllegalArgumentException("Uno de los números es nulo");
-		}
-	}
 }
