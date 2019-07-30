@@ -1,4 +1,4 @@
-package es.maquina1995.calculadoraJunit;
+package es.maquina1995.calculadora;
 
 public class CalculadoraImpl implements Calculadora {
 

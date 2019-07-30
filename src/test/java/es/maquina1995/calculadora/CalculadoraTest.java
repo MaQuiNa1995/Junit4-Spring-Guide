@@ -1,4 +1,4 @@
-package es.maquina1995.calculadoraJunit;
+package es.maquina1995.calculadora;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,7 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import es.maquina1995.configuration.SpringConfig;
+import es.maquina1995.calculadora.Calculadora;
+import es.maquina1995.calculadora.configuration.SpringConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { SpringConfig.class })
