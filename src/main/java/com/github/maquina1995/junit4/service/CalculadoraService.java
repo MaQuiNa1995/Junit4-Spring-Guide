@@ -1,6 +1,6 @@
-package es.maquina1995.calculadora;
+package com.github.maquina1995.junit4.service;
 
-public interface Calculadora {
+public interface CalculadoraService {
 
     public double sumar(double num1, double num2);
 
